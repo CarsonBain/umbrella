@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+
+  <title>Umbrella</title>
+</head>
+
+<body>
+  <aside aria-hidden="true" class="loading">
+    <div class="loading__elements">
+      <span aria-hidden="true" class="wi wi-umbrella"></span>
+      <p>Getting Location...</p>
+    </div>
+    </div>
+  </aside>
+  <div class="main-wrap">
+    <header>
+      <h1 class='city-name'></h1>
+    </header>
+    <main class="forecast">
+      <p class="temperature"></p>
+      <p class="icon"></p>
+      <div class="forecast__text">
+        <p class="currently">Currently: <span></span></p>
+        <p class="precip-prob">Chances of rain: <span></span></p>
+      </div>
+
+
+    </main>
+  </div>
+  <footer>
+    <p>🌎powered by <a href="https://darksky.net/poweredby/" target="_blank">Dark Sky</a></p>
+  </footer>
+
+</body>
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<script src="./index.js"></script>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "umbrella",
+  "version": "1.0.0",
+  "description": "Weather app built with Dark Sky and Google Maps API",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "sass": "^1.17.2"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Carson Bain",
+  "license": "ISC"
+}
