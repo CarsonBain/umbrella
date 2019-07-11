@@ -1,9 +1,8 @@
 import './styles/index.scss';
-import { settings } from './js/settings';
 
 const proxy = 'https://cors-anywhere.herokuapp.com/';
-const DSAPIkey = settings.DSAPIkey;
-const GAPIkey = settings.GAPIkey;
+const DSAPIkey = process.env.DSAPIkey;
+const GAPIkey = process.env.GAPIkey;
 
 const getPosition = () => {
   if (navigator.geolocation) {
@@ -23,7 +22,6 @@ getPosition()
     const getDarkSky = fetch(DSAPIurl)
       .then(response => response.json())
       .then(data => {
-        console.log(data);
         document.querySelector('.currently span').innerHTML =
           data.minutely.summary;
         document.querySelector('.precip-prob span').innerHTML = `${

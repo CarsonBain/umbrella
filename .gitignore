@@ -3,4 +3,4 @@ node_modules/
 dist/
 *.sass-cache
 .cache
-secrets.js
+.env
